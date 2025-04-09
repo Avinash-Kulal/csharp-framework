@@ -4,8 +4,7 @@ using dotenv.net;
 
 //-:cnd:noEmit
 #if DEBUG
-DotEnv.Load(options: new DotEnvOptions(envFilePaths: new[] { ".env.example" }));
-DotEnv.Load();
+DotEnv.Load(options: new DotEnvOptions(envFilePaths: new[] { ".env.example", ".env" }));
 #endif
 //+:cnd:noEmit
 
